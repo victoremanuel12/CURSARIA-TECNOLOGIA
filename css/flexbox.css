@@ -1,0 +1,133 @@
+/* cabecalho */
+
+.cabecalhoPrincipal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalhoPrincipal .cabecalhoPrincipal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:767px) {
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+    }
+    .cabecalhoPrincipal .cabecalhoPrincipal-nav {
+        flex-direction: column-reverse;
+        align-items: initial;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* nossos cursos */
+
+.container-corpo :first-child {
+    text-align: center;
+}
+
+.conteudoPrincipal-cursos {
+    margin: 20px auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+@media screen and (max-width:767px) {
+    .conteudoPrincipal-cursos {
+        margin: 20px auto;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* video sobre */
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.videoSobre-video,
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre .container {
+    display: flex;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    .videoSobre .container {
+        flex-direction: column;
+    }
+}
+
+
+/* Mapa de cursos */
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: stretch;
+    height: 250px;
+}
+
+@media screen and (max-width:767px) {
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+}
+
+
+/* footer */
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+@media screen and (max-width:767px) {
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+        margin: 0;
+    }
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+}
